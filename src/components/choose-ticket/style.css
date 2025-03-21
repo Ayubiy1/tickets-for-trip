@@ -1,0 +1,62 @@
+.ticket {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+@keyframes spin-forward {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-backward {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.swap-button {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotate-forward {
+    animation: spin-forward 0.5s ease-in-out;
+}
+
+.rotate-back {
+    animation: spin-backward 0.5s ease-in-out;
+}
+
+.aaaaa {}
+
+@media screen and (max-width: 630px) {}
+
+@media screen and (min-width: 888px) {
+    .ticket {
+        background-image: url("https://lh3.googleusercontent.com/KmIsqrPKsuT010OS91MIWbvPTncddUEuzpzBl0d1yxLfzPzXi2knON4CponB6ggmTDPvr9PgY8lja2VpAJEZkNmh=s1280-w1280-h800") !important;
+    }
+}
+
+@media screen and (max-width: 887px) {
+    .ticket {
+        padding: 0 !important;
+        align-items: start !important;
+        justify-content: start !important;
+    }
+
+    .ticket .ticket-div {
+        border-radius: 0;
+        /* background-color: red !important; */
+        width: 100% !important;
+    }
+}
